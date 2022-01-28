@@ -94,6 +94,8 @@ function resetEverything() {
 
   tipAmountElement.textContent = "0.00";
   totalAmountElement.textContent = "0.00";
+
+  window.location.reload();
 }
 
 function calculateTip() {
