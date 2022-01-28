@@ -1,0 +1,316 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+img {
+  width: Min(60%, 10em);
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main {
+  width: Min(100%, 60em);
+  min-height: 100%;
+  margin: 3em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  font-family: "Space Mono", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2em 1.2em;
+}
+
+.bill-tip-people-container {
+  background-color: #fff;
+  width: Min(95%, 80em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.bill-tip-people-container h2 {
+  color: #5e7a7d;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.bill-tip-people-container .input-container input {
+  font-size: 1.8rem;
+  width: Min(100%);
+  border: none;
+  border-radius: 6px;
+  padding: 0.3em 0.8em;
+  color: #00494d;
+  text-align: right;
+}
+
+.bill-tip-people-container .input-container input:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.bill-tip-people-container .input-container #bill {
+  background: url(../images/icon-dollar.svg) no-repeat scroll 0.8em center;
+  padding-left: 4em;
+  background-color: #f4fafa;
+}
+
+.bill-tip-people-container .input-container #people {
+  background: url(../images/icon-person.svg) no-repeat scroll 0.8em center;
+  padding-left: 4em;
+  background-color: #f4fafa;
+}
+
+.bill-tip-people-container .input-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bill-tip-people-container .input-title .error {
+  color: #d86c6c;
+}
+
+.bill-tip-people-container .error-outline {
+  outline: 2px solid #d86c6c;
+}
+
+.bill-tip-people-container .tip {
+  width: 100%;
+}
+
+.bill-tip-people-container .tip .button-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bill-tip-people-container .tip .button-container button,
+.bill-tip-people-container .tip .button-container input {
+  padding: 0.5em 0;
+  width: Min(100%);
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #00494d;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.bill-tip-people-container .tip .button-container button:focus,
+.bill-tip-people-container .tip .button-container input:focus {
+  outline: 2px solid #26c0ab;
+}
+
+.bill-tip-people-container .tip .button-container .active {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+.bill-tip-people-container .tip .button-container button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+
+.bill-tip-people-container .tip .button-container #custom {
+  background-color: #f4fafa;
+  color: #00494d;
+}
+
+.tip-amount-total-container {
+  width: Min(95%, 80em);
+  background-color: #00494d;
+  padding: 2em;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.tip-amount-total-container h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.tip-amount-total-container h3 {
+  color: #7f9c9f;
+  font-size: 1.4rem;
+}
+
+.tip-amount-total-container .tip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tip-amount-total-container .tip-container h1 {
+  font-size: 2.4rem;
+  color: #26c0ab;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.tip-amount-total-container button {
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4em;
+  font-size: 1.8rem;
+  color: #00494d;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tip-amount-total-container button:hover {
+  background-color: #c5e4e7;
+  cursor: pointer;
+}
+
+.tip-amount-total-container button:focus {
+  outline: 2px solid #26c0ab;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    width: Min(80%, 120em);
+    min-height: 100%;
+    margin: 3em auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2em;
+    padding: 2em;
+  }
+  .bill-tip-people-container {
+    width: 100%;
+  }
+  .bill-tip-people-container .input-container input {
+    font-size: 2rem;
+  }
+  .bill-tip-people-container h2 {
+    font-size: 2.4rem;
+  }
+  .bill-tip-people-container .tip .button-container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .bill-tip-people-container .tip .button-container button,
+  .bill-tip-people-container .tip .button-container input {
+    font-size: 2rem;
+  }
+  .tip-amount-total-container {
+    width: 100%;
+    min-height: 100%;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tip-amount-total-container h2 {
+    color: #fff;
+    font-size: 2.4rem;
+  }
+  .tip-amount-total-container h3 {
+    color: #7f9c9f;
+    font-size: 1.8rem;
+  }
+  .tip-amount-total-container .tip-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .tip-amount-total-container .tip-container h1 {
+    font-size: 3rem;
+    color: #26c0ab;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tip-amount-total-container button {
+    background-color: #26c0ab;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4em;
+    font-size: 2.2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
